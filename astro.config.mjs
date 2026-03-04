@@ -7,7 +7,7 @@ import {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ZynapseSystems.github.io',
+  site: 'https://zynapsesystems.github.io',
   scopedStyleStrategy: 'where',
   experimental: {
     fonts: [
