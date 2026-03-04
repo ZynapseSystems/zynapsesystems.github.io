@@ -1,0 +1,184 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroHome from "../components/HeroHome.astro";
+import TextMarquee from "../components/TextMarquee.astro";
+import TextMarquee2 from "../components/TextMarquee2.astro";
+import GalleryText from "../components/GalleryText.astro";
+import ImageMarquee from "../components/ImageMarquee.astro";
+import Faqs from "../components/Faqs.astro";
+import StepsTimeline from "../components/StepsTimeline.astro";
+import Plans from "../components/Plans.astro";
+import Statements from "../components/Statements.astro";
+import Introducing from "../components/Introducing.astro";
+import GL from "../components/GL.astro";
+import GLPlaces from "../components/GlPlaces.astro";
+
+import logo1 from "../assets/logoipsum-344.svg";
+import logo2 from "../assets/logoipsum-350.svg";
+import logo3 from "../assets/logoipsum-345.svg";
+import logo4 from "../assets/logoipsum-385.svg";
+import logo5 from "../assets/logoipsum-375.svg";
+import logo6 from "../assets/logoipsum-378.svg";
+import logo7 from "../assets/logoipsum-346.svg";
+import logo8 from "../assets/logoipsum-331.svg";
+---
+
+<Layout title="Zynapse Systems LLC. - IT Consulting & Managed Services">
+  <HeroHome
+    title="Clarity Through Technology"
+    subtitle="Strategic technology planning, secure systems, and ongoing support designed to help your organization operate efficiently and confidently."
+    cta={{
+      title: "Schedule a Free Consultation",
+      url: "#contact",
+    }}
+  />
+
+  <TextMarquee
+  class="marquee"
+  texts={[
+    "IT Strategy & Consulting",
+    "Website Services",
+    "Workspace Administration",
+    "General IT Support",
+  ]}
+  />
+
+  <TextMarquee
+    class="marquee"
+    direction={-1}
+    texts={[
+      "Domain & Email Management",
+      "Security Consulting",
+      "Data Migration",
+      "Emergency Support",
+      "Technology Monitoring",
+    ]}
+  />
+
+  <Introducing
+    title="Technology That Works For Your Organization"
+    text="We help non-profits and small businesses align their technology with their mission. From infrastructure planning to ongoing support, we provide practical, cost-effective solutions that scale with your growth."
+    cta={{
+      title: "Explore Our Services",
+      url: "/services",
+    }}
+  />
+
+  <StepsTimeline
+    title="Our Approach"
+    items={[
+      {
+        title: "Understand Your Organization",
+        text: "We begin by evaluating your current systems, workflows, and goals to identify opportunities for improvement.",
+      },
+      {
+        title: "Design Practical Solutions",
+        text: "We recommend cost-effective tools and infrastructure tailored specifically to your operational needs.",
+      },
+      {
+        title: "Implement & Support",
+        text: "We deploy, secure, and maintain your systems, providing ongoing guidance and technical support.",
+      },
+    ]}
+  />
+
+  <Statements
+  items={[
+    {
+      title: "IT Strategy & Consulting",
+      text: "Technology roadmaps, infrastructure assessments, digital transformation planning, vendor evaluation, and budget optimization.",
+    },
+      {
+        title: "Website & Digital Services",
+        text: "Custom website development, platform migrations, performance optimization, maintenance, security, and backups.",
+      },
+      {
+        title: "Workspace Administration",
+        text: "Google Workspace and Microsoft 365 administration, user provisioning, compliance configuration, and workflow automation.",
+      },
+      {
+        title: "Software Solutions & Implementation",
+        text: "CRM systems, project management tools, grant tracking systems, workflow automation, and user training.",
+      },
+      {
+        title: "General IT Support",
+        text: "Troubleshooting, device setup, network configuration, backup solutions, and proactive maintenance.",
+      },
+    ]}
+  />
+  
+  <Faqs
+    title="Frequently Asked Questions"
+    mobileTitle="FAQs"
+    subtitle="Answers to common questions about our consulting and support services."
+    items={[
+      {
+        question: "Do you offer ongoing managed IT support?",
+        answer:
+          "Yes. We provide ongoing technology management, monitoring, and support tailored to your organization’s needs.",
+      },
+      {
+        question: "Can you help migrate from one platform to another?",
+        answer:
+          "Absolutely. We handle secure data migrations for email systems, collaboration platforms, and business software.",
+      },
+      {
+        question: "Do you work with small teams?",
+        answer:
+          "Yes. We specialize in organizations with 5–50 employees and understand the unique constraints and goals of growing teams.",
+      },
+      {
+        question: "Is emergency support available?",
+        answer:
+          "Yes. We are available for urgent technical issues that require immediate attention.",
+      },
+    ]}
+  />
+
+  <ImageMarquee
+    images={[
+      {
+        src: logo1.src,
+        alt: "Logo 1",
+      },
+      {
+        src: logo3.src,
+        alt: "Logo 3",
+      },
+      {
+        src: logo4.src,
+        alt: "Logo 4",
+      },
+      {
+        src: logo8.src,
+        alt: "Logo 8",
+      },
+      {
+        src: logo5.src,
+        alt: "Logo 5",
+      },
+      {
+        src: logo6.src,
+        alt: "Logo 6",
+      },
+      {
+        src: logo2.src,
+        alt: "Logo 2",
+      },
+      {
+        src: logo7.src,
+        alt: "Logo 7",
+      },
+    ]}
+  />
+
+  <GL />
+  <GLPlaces />
+</Layout>
+
+<style>
+  .marquee {
+    padding: 2rem 0;
+    z-index: 9;
+  }
+</style>
